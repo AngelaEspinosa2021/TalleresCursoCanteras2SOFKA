@@ -42,7 +42,7 @@ public class Person
     }
     //fin constructores
 
-
+    //métodos
     public String getDocumentType()
     {
         return documentType;
@@ -122,4 +122,5 @@ public class Person
     {
         this.phoneNumber = phoneNumber;
     }
+    //fin métodos
 }
