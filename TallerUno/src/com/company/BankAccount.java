@@ -7,7 +7,7 @@ public class BankAccount
     public String customerDocumentType;
     public String customerDocumentNumber;
     public String customerFullName;
-    private double saldo;
+    private double accountBalance;
     protected boolean activated;
 
     //constructores
@@ -17,20 +17,80 @@ public class BankAccount
         customerDocumentType="CC";
         customerDocumentNumber="1053777489";
         customerFullName="ANGELA MARIA ESPINOSA GRANADA";
-        saldo=0;
+        accountBalance=0;
         activated=false;
     }
 
-    public BankAccount(int accountNumber, String customerDocumentType, String customerDocumentNumber, String customerFullName, double saldo,boolean activated)
+    public BankAccount(int accountNumber, String customerDocumentType, String customerDocumentNumber, String customerFullName, double accountBalance,boolean activated)
     {
         this();
         this.accountNumber=accountNumber;
         this.customerDocumentType=customerDocumentType;
         this.customerDocumentNumber=customerDocumentNumber;
         this.customerFullName=customerFullName;
-        this.saldo=saldo;
+        this.accountBalance=accountBalance;
         this.activated=activated;
     }
     //fin constructores
 
+    //métodos
+    public int getAccountNumber()
+    {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber)
+    {
+        this.accountNumber=accountNumber;
+    }
+
+    public String getCustomerDocumentType()
+    {
+        return customerDocumentType;
+    }
+
+    public void setCustomerDocumentType(String customerDocumentType)
+    {
+        this.customerDocumentType=customerDocumentType;
+    }
+
+    public String getCustomerDocumentNumber()
+    {
+        return customerDocumentNumber;
+    }
+
+    public void setCustomerDocumentNumber(String customerDocumentNumber)
+    {
+        this.customerDocumentNumber=customerDocumentNumber;
+    }
+
+    public String getCustomerFullName()
+    {
+        return customerFullName;
+    }
+
+    public void setCustomerFullName(String customerFullName)
+    {
+        this.customerFullName=customerFullName;
+    }
+
+    public double getAccountBalance()
+    {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(double accountBalance)
+    {
+        this.accountBalance = accountBalance;
+    }
+
+    public boolean getActivated()
+    {
+        return activated;
+    }
+
+    public void setActivated(boolean activated)
+    {
+        this.activated=activated;
+    }
 }
