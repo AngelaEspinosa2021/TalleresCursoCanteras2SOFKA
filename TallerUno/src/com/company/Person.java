@@ -1,5 +1,6 @@
 package com.company;
 
+import java.time.chrono.ThaiBuddhistEra;
 import java.util.Date;
 
 public class Person
@@ -42,5 +43,83 @@ public class Person
     //fin constructores
 
 
+    public String getDocumentType()
+    {
+        return documentType;
+    }
 
+    public void setDocumentType(String documentType)
+    {
+        this.documentType = documentType;
+    }
+
+    public String getDocumentNumber()
+    {
+        return documentNumber;
+    }
+
+    public void setDocumentNumber(String documentNumber)
+    {
+        this.documentNumber = documentNumber;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public String getlastName1()
+    {
+        return lastName1;
+    }
+
+    public void setLastName1(String lastName1)
+    {
+        this.lastName1 = lastName1;
+    }
+
+    public String getLastName2()
+    {
+        return lastName2;
+    }
+
+    public void setLastName2(String lastName2)
+    {
+        this.lastName2 = lastName2;
+    }
+
+    public Date getDateBirth()
+    {
+        return dateBirth;
+    }
+
+    public void setDateBirth(Date dateBirth)
+    {
+        this.dateBirth = dateBirth;
+    }
+
+    public float getHeight()
+    {
+        return height;
+    }
+
+    public void setHeight(float height)
+    {
+        this.height = height;
+    }
+
+    public String getPhoneNumber()
+    {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber)
+    {
+        this.phoneNumber = phoneNumber;
+    }
 }
