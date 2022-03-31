@@ -23,7 +23,7 @@ public class Person
         name="Angela";
         lastName1="Espinosa";
         lastName2="Granada";
-        //dateBirth=1987-06-17;
+        dateBirth= new Date(17/06/1987);
         height=163;
         phoneNumber="3193452785";
     }
